@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+    <style>
+        body {
+            background-color: gold;
+        }
+        fieldset {
+            height: 300px;
+            width: 600px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+<form action="/action_page.php" method="post">
+    <fieldset>
+        <legend style="color: blue">
+            ĐĂNG KÝ HỌC VIÊN
+        </legend>
+        Họ và tên :
+        <input type="text" name="yourname"/><br/><br/>
+        Ngày sinh :
+        <input type="text" name="date time"/><br/>
+        Giới tính:
+        <label><input name="sex" value="male" type="radio" checked/>Nam</label>
+        <label><input name="sex" value="female" type="radio">Nữ</label><br/>
+        Địa chỉ:
+        <textarea cols="20" rows="4"></textarea><br/>
+        Lớp:&nbsp;&nbsp;
+        <select name="Class">
+            <option value="A">Lớp A</option>
+            <option value="B">Lớp B</option>
+            <option value="C">Lớp C</option>
+            <option value="D">Lớp D</option>
+        </select>
+        <br/><br/>
+        Email:&nbsp;&nbsp;
+        <input type="text" name="email"/><br/><br/>
+        Điện thoại
+        <input type="text" name="phone"/><br/><br/>
+        <input type="submit" value="Đăng kí"/>
+        <input type="reset" value="Nhập lại"/>
+
+    </fieldset>
+</form>
+</body>
+</html>
